@@ -2,11 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
-  output: {
-    path: path.resolve(__dirname, "./static/frontend"),
-    filename: "[name].js",
-  },
   module: {
     rules: [
       {
@@ -29,4 +24,13 @@ module.exports = {
       },
     }),
   ],
+  resolve: {
+    extensions: [".js", ".json", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "~images": path.resolve(
+        __dirname,
+        "frontend/static/frontend/images_apps"
+      ),
+    },
+  },
 };

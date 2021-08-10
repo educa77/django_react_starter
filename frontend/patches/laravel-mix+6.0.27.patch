@@ -1,0 +1,13 @@
+diff --git a/node_modules/laravel-mix/src/components/Notifications.js b/node_modules/laravel-mix/src/components/Notifications.js
+index c022b24..a668d12 100644
+--- a/node_modules/laravel-mix/src/components/Notifications.js
++++ b/node_modules/laravel-mix/src/components/Notifications.js
+@@ -9,7 +9,7 @@ class Notifications extends AutomaticComponent {
+             let WebpackNotifierPlugin = require('webpack-notifier');
+ 
+             return new WebpackNotifierPlugin({
+-                appID: 'Laravel Mix',
++                appID: 'Laravel Mix Edu',
+ 
+                 title: 'Laravel Mix',
+                 alwaysNotify: Config.notifications.onSuccess,

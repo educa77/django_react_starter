@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,20 +7,18 @@ import {
   Redirect,
 } from "react-router-dom";
 
-export default class HomePage extends Component {
-  constructor(props) {
-    super(props);
-  }
+const HomePage = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <div className="test">
+            This is the home page y me da bolaaaaaaa!!!!!
+          </div>
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
 
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <p>This is the home page</p>
-          </Route>
-        </Switch>
-      </Router>
-    );
-  }
-}
+export default HomePage;
