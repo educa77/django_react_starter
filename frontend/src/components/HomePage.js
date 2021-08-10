@@ -12,9 +12,7 @@ const HomePage = () => {
     <Router>
       <Switch>
         <Route exact path="/">
-          <div className="test">
-            This is the home page y me da bolaaaaaaa!!!!!
-          </div>
+          <div className="test">Estamos en la home page!!!!!</div>
         </Route>
       </Switch>
     </Router>
